@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📝 My To-Do List</h1>
+
+<input type="text" id="task" placeholder="Enter a task">
+
+<button onclick="addTask()">Add Task</button>
+<p>Total Tasks: <span id="count">0</span></p>
+<ul id="taskList"></ul>
+
+<script>
+  
+function addTask() {
+
+    let task = document.getElementById("task").value;
+
+    if (task === "") {
+        return;
+    }
+
+    let list = document.getElementById("taskList");
+
+    let item = document.createElement("li");
+
+    item.innerHTML =
+        task +
+        ' <button onclick="completeTask(this)">Done</button>' +
+        ' <button onclick="deleteTask(this)">Delete</button>';
+
+    list.appendChild(item);updateCount();
+
+    document.getElementById("task").value = "";
+
+}
+
+function completeTask(button) {
+    button.parentElement.style.textDecoration = "line-through";
+    button.parentElement.style.color = "gray";
+}
+function updateCount() {
+    let total = document.getElementById("taskList").children.length;
+    document.getElementById("count").innerHTML = total;
+}
+function deleteTask(button) {
+    button.parentElement.remove();
+    updateCount();
+}
+</script>
+
+</body>
+</html>

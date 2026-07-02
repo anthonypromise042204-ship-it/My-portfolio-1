@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maximum's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="login.html">Login</a>
+</nav>
+
+
+<hr>
+
+
+<h1>MAXIMUM`S PORTFOLIO</h1>
+
+<img src="US.jpg" alt="My Photo" width="300">
+<h2>About Me</h2>
+
+<p>
+Hello! My name is Maximum.
+I am learning HTML, CSS, and JavaScript.
+My dream is to become a world-class software developer.
+</p>
+<h2>My Skills</h2>
+
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+<div class="container">
+
+    <div class="box">HTML</div>
+
+    <div class="box">CSS</div>
+
+    <div class="box">JavaScript</div>
+
+</div>
+
+<div class="login-box">
+
+<h2>LOGIN PURCHASED TOKEN</h2>
+
+<form>
+
+<label>TOKEN MAIL:</label><br>
+<input type="text" id="name" placeholder="Enter token"><br><br>
+
+<label>Password:</label><br>
+<input type="password" id="password" placeholder="Enter your password"><br><br>
+
+<button type="button" onclick="showMessage()">Login</button>
+
+<p id="message"></p>
+
+</form>
+
+</div>
+
+<script>
+function showMessage() {
+
+    let username = document.getElementById("name").value;
+    let password = document.getElementById("password").value;
+
+    if (username == "" || password == "") {
+
+        document.getElementById("message").innerHTML =
+        "Please enter both your token and password.";
+
+    } else if (password == "042204") {
+
+        document.getElementById("message").innerHTML =
+        "✅ Login Successful. Welcome, " + username + "!";
+
+    } else {
+
+        document.getElementById("message").innerHTML =
+        "❌ Incorrect password.";
+
+    }
+
+}
+</script>
+
+<hr>
+  
+<h2>I WANT TO PURCHASE A TOKEN📑</h2>
+<p>
+  <a href=" https://wa.me/2348030918694">BUY NEW TOKEN</a>
+</p>
+<p>
+  <a href=" https://wa.me/2348030918694">RETRIEVE NEW TOKEN</a>
+</p>
+<p>This website was built by an 20 years nigerian </p>
+
+<p>who want to become a world-class software developer.</p>
+
+<h2>Are you troubleshooting login?</h2>
+<p>
+  <a href="https://t.me/richiehacke">
+    RETRIEVE TOKEN</style></a>
+  <hr>
+<ul><h3> you want to learn how to cod ur website 💌</h3>
+    <li>Learn HTML</li>
+    <li>Learn CSS</li>
+    <li>Learn JavaScript</li>
+    <li>Build amazing websites</li>
+</ul> 
+<p>This website was built by Maximum while learning HTML and CSS.</p>
+
+</body>
+</html>

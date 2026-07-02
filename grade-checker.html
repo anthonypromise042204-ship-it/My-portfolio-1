@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Checker</title>
+</head>
+<body>
+
+<h1>Grade Checker</h1>
+
+<input type="number" id="score" placeholder="Enter your score">
+
+<button onclick="checkGrade()">Check Grade</button>
+
+<p id="result"></p>
+
+<script>
+
+function checkGrade() {
+
+    let score = Number(document.getElementById("score").value);
+
+    if (score >= 90) {
+        document.getElementById("result").innerHTML = "🌟 Grade A";
+    } else if (score >= 70) {
+        document.getElementById("result").innerHTML = "👍 Grade B";
+    } else {
+        document.getElementById("result").innerHTML = "📚 Grade C";
+    }
+
+}
+
+</script>
+
+</body>
+</html>

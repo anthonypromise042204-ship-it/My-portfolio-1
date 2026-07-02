@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess the Number</title>
+</head>
+<body>
+
+<h1>🎲 Guess the Number</h1>
+
+<p>Guess a number between 1 and 10.</p>
+
+<input type="number" id="guess">
+
+<button onclick="checkGuess()">Guess</button>
+
+<p id="result"></p>
+
+<script>
+
+let secretNumber = 7;
+
+function checkGuess() {
+
+    let guess = Number(document.getElementById("guess").value);
+
+    if (guess === secretNumber) {
+
+        document.getElementById("result").innerHTML =
+        "🎉 Correct! You guessed the number.";
+
+    } else if (guess < secretNumber) {
+
+        document.getElementById("result").innerHTML =
+        "⬆️ Too low! Try a higher number.";
+
+    } else {
+
+        document.getElementById("result").innerHTML =
+        "⬇️ Too high! Try a lower number.";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
