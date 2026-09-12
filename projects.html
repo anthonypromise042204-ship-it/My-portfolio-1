@@ -1,42 +1,204 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en">
 <head>
-    <title>My Projects</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Projects | Maximum</title>
 
-<body>
+<meta name="description"
+      content="Software projects built by Maximum, including Connectly and practical JavaScript applications.">
 
-<h1>🚀 MAXIMUM Development Projects</h1>
+<link rel="stylesheet" href="style.css">
 
-<p id="date"></p>
+</head><body><header class="site-header">
 
-<div class="box">
-    <h2>🧮 Calculator</h2>
-    <p>My first JavaScript calculator.</p>
-    <a href="calculator.html">Open Calculator</a>
-</div>
+    <nav class="navbar">
 
-<br>
+        <a href="index.html" class="logo">
+            MAXIMUM
+        </a>
 
-<div class="box">
-    <h2>📝 To-Do List</h2>
-    <p>My task management app.</p>
-    <a href="todo.html">Open To-Do List</a>
-</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
-<br>
+    </nav>
 
-<div class="box">
-    <h2>👤 Portfolio</h2>
-    <p>My personal website.</p>
-    <a href="index.html">Open Portfolio</a>
-</div>
-<script>
-let today = new Date();
-document.getElementById("date").innerHTML =
-"Today's date is: " + today;
-</script>
+</header>
+
+
+<main>
+
+    <section class="section">
+
+        <p class="section-label">
+            MY WORK
+        </p>
+
+        <h1>
+            Projects
+        </h1>
+
+        <p>
+            I learn software engineering by building practical projects.
+            Here are some of the applications and experiments I've developed
+            while growing my technical skills.
+        </p>
+
+    </section>
+
+
+    <!-- CONNECTLY -->
+
+    <section class="featured-project">
+
+        <p class="section-label">
+            FLAGSHIP PROJECT
+        </p>
+
+        <h2>
+            Connectly
+        </h2>
+
+        <p>
+            Connectly is a full-stack social platform I'm developing to
+            explore how modern web applications handle users, content,
+            authentication and social interaction.
+        </p>
+
+        <div class="tech-list">
+            <span>React</span>
+            <span>Vite</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>SQLite</span>
+            <span>Drizzle</span>
+            <span>REST API</span>
+            <span>Authentication</span>
+        </div>
+
+        <h3>What I'm building</h3>
+
+        <p>
+            User accounts, profiles, social feeds, posts, sharing,
+            following, messaging and notifications are part of the
+            product direction.
+        </p>
+
+        <h3>Engineering focus</h3>
+
+        <p>
+            The project has given me practical experience with backend
+            APIs, databases, authentication, sessions, security
+            middleware, rate limiting, frontend development and debugging.
+        </p>
+
+    </section>
+
+
+    <!-- JAVASCRIPT PROJECTS -->
+
+    <section class="section">
+
+        <p class="section-label">
+            JAVASCRIPT
+        </p>
+
+        <h2>
+            Practical Applications
+        </h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>Calculator</h3>
+                <p>
+                    A beginner JavaScript calculator built to practice
+                    user input, calculations and interactive interfaces.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Age Checker</h3>
+                <p>
+                    An interactive application that uses JavaScript
+                    logic and user input to evaluate age.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>To-Do Application</h3>
+                <p>
+                    A task-management project created to practice
+                    JavaScript interactions and dynamic page updates.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Guessing Game</h3>
+                <p>
+                    An interactive JavaScript game designed to practice
+                    conditions, variables and user interaction.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Grade Checker</h3>
+                <p>
+                    A simple application demonstrating conditional
+                    logic and user input processing.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Counter</h3>
+                <p>
+                    A small JavaScript application used to practice
+                    events, variables and dynamic updates.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LEARNING -->
+
+    <section class="section">
+
+        <p class="section-label">
+            DEVELOPMENT
+        </p>
+
+        <h2>
+            Still building.
+        </h2>
+
+        <p>
+            These projects represent different stages of my development
+            journey. My goal is to keep progressing from small
+            applications toward production-quality software and
+            AI-powered products.
+        </p>
+
+        <a href="contact.html" class="button primary-button">
+            Contact Me
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Maximum. Built while learning, building and growing.
+    </p>
+
+</footer>
 
 </body>
 </html>
