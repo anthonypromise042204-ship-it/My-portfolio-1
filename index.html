@@ -1,120 +1,197 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en">
 <head>
-    <title>Maximum's Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Maximum | Software Developer & AI Builder</title>
 
-<body>
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a> |
-    <a href="login.html">Login</a>
-</nav>
+<meta name="description"
+      content="Maximum is a self-taught software developer and AI builder focused on creating practical web applications and emerging AI technologies.">
+
+<link rel="stylesheet" href="style.css">
+
+</head><body><header class="site-header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            MAXIMUM
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+</header>
 
 
-<hr>
+<main>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="eyebrow">
+                SOFTWARE DEVELOPER • AI BUILDER
+            </p>
+
+            <h1>
+                I build software,
+                learn relentlessly,
+                and explore what's next in AI.
+            </h1>
+
+            <p class="hero-description">
+                I'm Maximum, a self-taught developer building practical
+                web applications while developing my skills in
+                full-stack engineering and artificial intelligence.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="projects.html" class="button primary-button">
+                    View My Projects
+                </a>
+
+                <a href="contact.html" class="button secondary-button">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
 
 
-<h1>MAXIMUM`S PORTFOLIO</h1>
+        <div class="hero-image">
 
-<img src="US.jpg" alt="My Photo" width="300">
-<h2>About Me</h2>
+            <img src="US.jpg"
+                 alt="Maximum"
+                 class="profile-image">
 
-<p>
-Hello! My name is Maximum.
-I am learning HTML, CSS, and JavaScript.
-My dream is to become a world-class software developer.
-</p>
-<h2>My Skills</h2>
+        </div>
 
-<ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-</ul>
-<div class="container">
+    </section>
 
-    <div class="box">HTML</div>
 
-    <div class="box">CSS</div>
+    <!-- ABOUT PREVIEW -->
 
-    <div class="box">JavaScript</div>
+    <section class="section">
 
-</div>
+        <p class="section-label">
+            ABOUT
+        </p>
 
-<div class="login-box">
+        <h2>
+            Building through practice.
+        </h2>
 
-<h2>LOGIN PURCHASED TOKEN</h2>
+        <p>
+            My development journey started with HTML, CSS and JavaScript.
+            Since then, I've expanded into React, Node.js, Express,
+            databases, APIs, authentication and application security.
+        </p>
 
-<form>
+        <p>
+            I learn by building real projects, solving problems and
+            continuously improving my understanding of software engineering.
+        </p>
 
-<label>TOKEN MAIL:</label><br>
-<input type="text" id="name" placeholder="Enter token"><br><br>
+        <a href="about.html" class="text-link">
+            Learn more about me →
+        </a>
 
-<label>Password:</label><br>
-<input type="password" id="password" placeholder="Enter your password"><br><br>
+    </section>
 
-<button type="button" onclick="showMessage()">Login</button>
 
-<p id="message"></p>
+    <!-- FEATURED PROJECT -->
 
-</form>
+    <section class="featured-project">
 
-</div>
+        <p class="section-label">
+            FEATURED PROJECT
+        </p>
 
-<script>
-function showMessage() {
+        <h2>
+            Connectly
+        </h2>
 
-    let username = document.getElementById("name").value;
-    let password = document.getElementById("password").value;
+        <p>
+            A full-stack social platform I'm developing with React,
+            Node.js, Express and SQLite.
+        </p>
 
-    if (username == "" || password == "") {
+        <div class="tech-list">
 
-        document.getElementById("message").innerHTML =
-        "Please enter both your token and password.";
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>SQLite</span>
+            <span>REST APIs</span>
+            <span>Authentication</span>
 
-    } else if (password == "042204") {
+        </div>
 
-        document.getElementById("message").innerHTML =
-        "✅ Login Successful. Welcome, " + username + "!";
+        <a href="projects.html" class="button primary-button">
+            Explore Connectly
+        </a>
 
-    } else {
+    </section>
 
-        document.getElementById("message").innerHTML =
-        "❌ Incorrect password.";
 
-    }
+    <!-- SKILLS -->
 
-}
-</script>
+    <section class="section">
 
-<hr>
-  
-<h2>I WANT TO PURCHASE A TOKEN📑</h2>
-<p>
-  <a href=" https://wa.me/2348030918694">BUY NEW TOKEN</a>
-</p>
-<p>
-  <a href=" https://wa.me/2348030918694">RETRIEVE NEW TOKEN</a>
-</p>
-<p>This website was built by an 20 years nigerian </p>
+        <p class="section-label">
+            TECHNOLOGIES
+        </p>
 
-<p>who want to become a world-class software developer.</p>
+        <h2>
+            Tools I'm building with
+        </h2>
 
-<h2>Are you troubleshooting login?</h2>
-<p>
-  <a href="https://t.me/richiehacke">
-    RETRIEVE TOKEN</style></a>
-  <hr>
-<ul><h3> you want to learn how to cod ur website 💌</h3>
-    <li>Learn HTML</li>
-    <li>Learn CSS</li>
-    <li>Learn JavaScript</li>
-    <li>Build amazing websites</li>
-</ul> 
-<p>This website was built by Maximum while learning HTML and CSS.</p>
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>Frontend</h3>
+                <p>HTML • CSS • JavaScript • React • Vite</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Backend</h3>
+                <p>Node.js • Express • REST APIs</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Database</h3>
+                <p>SQLite • Drizzle • better-sqlite3</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Security</h3>
+                <p>Authentication • Sessions • CORS • Helmet • Rate Limiting</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Maximum. Built while learning, building and growing.
+    </p>
+
+</footer>
 
 </body>
 </html>
